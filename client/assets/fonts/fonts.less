@@ -1,0 +1,39 @@
+@base: '/assets/fonts';
+.font(@name){
+  font-family: '@{name}';
+  font-weight: normal;
+  font-style: normal;
+  src: url('@{base}/@{name}/@{name}.eot?#iefix') format('embedded-opentype'),  
+       url('@{base}/@{name}/@{name}.otf')  format('opentype'),
+       url('@{base}/@{name}/@{name}.woff') format('woff'), 
+       url('@{base}/@{name}/@{name}.ttf')  format('truetype'),
+       url('@{base}/@{name}/@{name}.svg#TruthCYR-Black') format('svg');
+}
+
+@font-face {
+  .font('TruthCYR-Black');
+}
+
+@font-face {
+  .font('TruthCYR-Bold');
+}
+
+@font-face {
+  .font('TruthCYR-Light');
+}
+
+@font-face {
+  .font('TruthCYR-Medium');
+}
+
+@font-face {
+  .font('TruthCYR-Regular');
+}
+
+@font-face {
+  .font('TruthCYR-Thin');
+}
+
+@font-face {
+  .font('TruthCYR-Ultra');
+}
