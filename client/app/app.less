@@ -4,6 +4,11 @@
 /* Import fonts*/
 @import '../assets/fonts/fonts.less';
 
+/* Reset.css */
+@import 'reset.css';
+
+/* Grid system */
+@import 'grid.less';
 
 /**
  * App-wide Styles
@@ -14,25 +19,5 @@
 @gray-color: #737373;
 @lgray-color: #E5E5E5;
 
-body{
-  font: 18px/100% 'TruthCYR-Light';
-}
 
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-}
-
-
-// injector
 @import 'main/main.less';
-// endinjector
