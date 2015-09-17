@@ -1,3 +1,4 @@
+/* Main block */
 .main-block-container{
   background: url(../../assets/images/intro-bg.jpg) center 0 no-repeat;
   border-bottom: 5px solid @orange-color;
@@ -21,5 +22,29 @@
     color: @orange-color;
     font-size: 24px;
     text-align: center;
+  }
+}
+
+/* trainers block */
+.trainers-container{
+  background: @orange-color;
+
+  .trainers-container-caption{
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+  }
+
+  .trainers-buttons{
+    height: 18px;
+  }
+
+  .trainers-list{
+    color: #fff;
+    font-size: 21px;
+    
+    li:nth-child(3n){
+      margin-right: 0;
+    }
   }
 }
