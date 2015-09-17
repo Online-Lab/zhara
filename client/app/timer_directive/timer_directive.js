@@ -22,13 +22,15 @@ angular.module('zharaApp')
         }
 
         var getTime = function(){
-          var time = new Date();
+          var today = moment(),
+              target = moment([2015,8,19,20,0,0,0]);//20 sep 2015
+          //var time = today.to(target);
 
           return {
-            d: time.getDate(),
-            h: time.getHours(),
-            m: time.getMinutes(),
-            s: time.getSeconds()
+            d: target.diff(today, "days"),
+            h: target.diff(today, "hours"),
+            m: target.diff(today, "minutes"),
+            s: target.diff(today, "seconds")
           };
         }
 
