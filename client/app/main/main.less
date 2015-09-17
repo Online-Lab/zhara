@@ -52,6 +52,7 @@
 /* Cocktails block */
 .cocktails-container{
   background: @black-color;
+  border-bottom: 5px solid @orange-color;
 
   .cocktails-container-caption{
     color: @orange-color;
@@ -69,5 +70,26 @@
     .cocktail-type1{ color: #38A3DC;}
     .cocktail-type2{ color: #8BC53F;}
     .cocktail-type3{ color: #FCBF12;}
+  }
+}
+
+/* Map container */
+.map-container{
+  padding: 0;
+  position: relative;
+  width: @content-width + 71px + 71px;
+
+  .map-main-container{
+    background: url(../../assets/images/map.jpg) center 0 no-repeat;
+    height: 353px;
+  }
+
+  .form-in-map-block{
+    background: @black-color;
+    height: 234px;
+    margin: 0;
+    position: absolute;
+    right: 70px;
+    top: 50px;
   }
 }
