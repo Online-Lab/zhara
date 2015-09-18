@@ -23,14 +23,12 @@ angular.module('zharaApp')
 
         var getTime = function(){
           var today = moment(),
-              target = moment([2015,8,19,20,0,0,0]);//20 sep 2015
-          //var time = today.to(target);
+              target = moment("2015-10-05 18-00", "YYYY-MM-DD HH-mm");//20 sep 2015
 
           return {
             d: target.diff(today, "days"),
-            h: target.diff(today, "hours"),
-            m: target.diff(today, "minutes"),
-            s: target.diff(today, "seconds")
+            h: target.diff(today, "hours") % 24,
+            m: target.diff(today, "minutes") % 60
           };
         }
 
